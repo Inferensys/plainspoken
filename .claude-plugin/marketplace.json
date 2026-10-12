@@ -1,0 +1,20 @@
+{
+  "name": "inferensys",
+  "owner": {
+    "name": "Inferensys",
+    "url": "https://inferensys.com"
+  },
+  "metadata": {
+    "description": "Agent skills by Inferensys",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "plainspoken",
+      "description": "Landing page copy that reads like a person wrote it: positioning brief, proof-first copy, CTA ladder, AI-tell catalogue and a copy linter.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/plainspoken"]
+    }
+  ]
+}
