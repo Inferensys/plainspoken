@@ -1,6 +1,6 @@
 ---
 name: plainspoken
-description: Write, rewrite, or critique conversion copy for homepages and landing pages (hero headline, subhead, section headings, proof, CTAs, FAQ, form microcopy), especially for B2B services firms, agencies, consultancies, and technical products sold to expert buyers. Use this whenever the user asks for website copy, a homepage or landing page rewrite, a value proposition, hero or headline options, CTA labels, "make this page convert", "our copy sounds generic / AI-written", or positioning that has to end up as page copy, even if they never say "copywriting". Not for blog articles, emails, ads, or social posts.
+description: Write, rewrite, or critique conversion copy for homepages, landing pages and search-driven pages (service pages, comparisons, glossary and "what is" pages, guides, cost guides, integration and use-case pages), and the templates or LLM prompts that generate them at scale. Covers hero headlines, subheads, section headings, proof, CTAs, FAQ, form microcopy, title tags and meta descriptions, especially for B2B services firms, agencies, consultancies and technical products sold to expert buyers. Use this whenever the user asks for website copy, a homepage or landing page rewrite, a value proposition, headline or CTA options, SEO page copy, programmatic page templates, "make this page convert", or "our copy sounds generic / AI-written", even if they never say "copywriting". Not for blog articles, emails, ads, or social posts.
 ---
 
 # Plainspoken: landing page copy
@@ -208,11 +208,20 @@ move) and any claim you softened or removed and why.
 
 For a **critique** of existing copy, go element by element. Quote the current line, name the specific problem in a few words (for example "no proof", "competitor could say it", "label not claim", "salesy CTA"), say which fact would fix it, then give the rewrite or a placeholder. Rank the problems by impact on conversion, and put the hero and CTAs first.
 
+## Pages meant to rank in search
+
+If the page is meant to be found through search, or you're writing a template or generation prompt for many pages, read `references/seo-pages.md` before step 2. Search adds three things:
+
+1. **Read the results page first.** Match the page type that ranks, list the sub-questions, and write down what every top result misses. That gap is the page's reason to exist.
+2. **Answer first.** The definitive answer goes in the first two sentences, and the first sentence of each section should make sense on its own. Search systems and AI answers lift passages.
+3. **Every page needs facts no other page has.** Google treats many pages made mainly to rank as scaled content abuse, however they were produced, and can demote the whole site. If a template's page-specific fields are empty, don't generate the page. If swapping in a sibling's entity name leaves the page mostly true, the page fails.
+
 ## Reference files
 
 - `references/positioning-brief.md`: voice-of-customer mining, Dunford positioning, awareness stages and page length, the brief template. Read it at step 2.
 - `references/elements.md`: per-element guidance with real before/after examples. Read it while drafting.
 - `references/proof-and-ctas.md`: proof formats, risk reversal for services, the CTA intent ladder, CTA label do/don't. Read it for proof, CTAs and any page with low-intent traffic.
 - `references/ai-tells.md`: the full catalogue of generic/AI patterns and how to replace each one. It covers presumptive intensifiers, antagonism, and the humanizer patterns: staging, rhythm, inflation, formatting and chat leftovers. Read it before the edit passes.
+- `references/seo-pages.md`: reading the results page, playbooks per page type (service, comparison, glossary, guide, cost, integration, use case, shortlist), title and meta rules, writing to be cited by AI answers, programmatic templates and generation prompts, and a pre-publish checklist. Read it for any page meant to rank.
 - `references/sources.md`: the experts and studies behind these rules, with links, for when the user asks why.
 - `scripts/lint_copy.py`: run `python3 scripts/lint_copy.py <file>` (or pipe text on stdin). It flags stock and AI words, presumptive intensifiers, antagonistic phrases, contrast formulas, run-ups, closers, -ing riders, dashes, exclamation marks, Title Case headings, inconsistent CTA labels, sentence-rhythm uniformity, and reading grade. Treat its output as hints, not verdicts.

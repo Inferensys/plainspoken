@@ -44,6 +44,38 @@ Use these when the user asks why a rule exists, or wants to go deeper. Figures t
 - **Dawes / LinkedIn B2B Institute.** The 95:5 rule: most B2B buyers are out of market at any given time.
   - https://dreamdata.io/blog/the-95-5-rule-john-dawes
 
+## SEO and AI search
+
+- **Google primary sources:**
+  - Helpful, people-first content: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+  - Spam policies, including scaled content abuse: https://developers.google.com/search/docs/essentials/spam-policies
+  - Using generative AI content: https://developers.google.com/search/docs/fundamentals/using-gen-ai-content
+  - Title links: https://developers.google.com/search/docs/appearance/title-link
+  - Snippets: https://developers.google.com/search/docs/appearance/snippet
+  - AI features: https://developers.google.com/search/docs/appearance/ai-features
+  - Succeeding in AI search: https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search
+  - FAQ and HowTo changes: https://developers.google.com/search/blog/2023/08/howto-faq-changes
+  - Search Quality Rater Guidelines (Sept 2025), §4.6.5–4.6.6 on scaled content and §5.2.2 on filler: https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf
+- **John Mueller on programmatic SEO and site-wide trust (Sept 2026):** https://www.seroundtable.com/google-lose-faith-42032.html
+- **Lily Ray on AI content risk** (220+ sites, risky templates): https://lilyraynyc.substack.com/p/it-works-until-it-doesnt-ai-content-risks
+- **Kevin Indig, focused pages vs ultimate guides; citation position** (partly paywalled): https://www.growth-memo.com/p/shorter-focused-content-wins-in-chatgpt
+- **Siege Media:**
+  - Versus pages and AI traffic: https://www.siegemedia.com/research/versus-pages
+  - Refresh cadence: https://www.siegemedia.com/strategy/content-refresh
+- **Mike King / iPullRank, passage-level retrieval:** https://ipullrank.com/misinformation-about-chunking
+- **Ahrefs:**
+  - AI content and rankings: https://ahrefs.com/blog/ai-generated-content-does-not-hurt-your-google-rankings/
+  - AI Overview citations vs top 10: https://ahrefs.com/blog/ai-overview-citations-top-10/
+  - Brand mentions: https://ahrefs.com/blog/ai-overview-brand-correlation/
+  - Information gain: https://ahrefs.com/blog/information-gain/
+- **Semrush, content traits behind AI citations:** https://www.semrush.com/blog/content-optimization-ai-search-study/
+- **Backlinko, CTR and title length:** https://backlinko.com/google-ctr-stats
+- **Animalz, "Copycat Content":** https://www.animalz.co/blog/copycat-content
+- **Page teardowns (Oct 2026):**
+  - Learning pages: IBM Think, AWS "What is", Google Cloud, Databricks, Elastic, Pinecone, Microsoft Learn, Atlassian, HubSpot
+  - Programmatic pages: Zapier, Wise, Toptal, Arc.dev
+  - Services and listicle pages: Vstorm, Entrans, RaftLabs, ITRex, SoluteLabs, Netguru, Thoughtworks
+
 ## Where experts disagree, and how this skill resolves it
 
 | Question | Disagreement | Resolution |
@@ -52,6 +84,9 @@ Use these when the user asks why a rule exists, or wants to go deeper. Figures t
 | How should messages be tested? | Wiebe favours A/B tests. Dunford prefers sales calls. Laja uses panel tests. | Test positioning in sales calls, messages in panels, and page details in A/B tests. |
 | Is a low reading level right for experts? | Unbounce's finding comes mostly from consumer pages. | Keep sentences simple and keep precise technical nouns. |
 | Clarity or craft? | Shapiro and Laja put clarity first. D&AD and Shleyner value wit. | Be literal in heroes and headings, and save craft for the body. |
+| Chunking for AI answers | Sullivan says don't write bite-sized chunks. King and Solis argue for self-contained passages | Make each section self-contained, inside one coherent page; never split into micro-pages |
+| Comparison pages at scale | Siege Media says build many versus pages. Ray says scaled versus pages are a risk footprint | Build only the matchups you have first-hand evidence for; be fair; cap the volume |
+| AI-written pages | Ahrefs finds no ranking penalty per page. Ray finds AI-scaled sites decline months later | Both hold: per-page AI use is neutral, while site-level volume without value gets caught |
 | Where does proof go? | Shapiro puts it right after the hero. Wiebe says not before the message is clear. | Put proof beside a clear claim, never in place of one. |
 
 ## Competitor teardown (Oct 2026)

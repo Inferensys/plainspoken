@@ -8,12 +8,13 @@ Most AI-written marketing copy fails the same way: there are no facts behind it,
 
 plainspoken makes Claude work the way a good conversion copywriter does. It collects the facts first. It settles positioning before it writes a line. Every claim gets proof placed next to it. When a fact is missing, it leaves a visible placeholder and asks you, instead of inventing a number.
 
-It works for any homepage or landing page. It's tuned for B2B services firms, agencies, consultancies and technical products sold to expert buyers.
+It works for any homepage or landing page. It also covers pages meant to rank in search: service pages, comparisons, glossaries, guides and integration pages, plus the templates and LLM prompts that generate them at scale, written to stay clear of Google's scaled-content rules. It's tuned for B2B services firms, agencies, consultancies and technical products sold to expert buyers.
 
 ## What it does
 
 - **Writes or rewrites a page.** You get a short positioning brief, the copy section by section, 2–3 headline options with the angle of each, and a list of the facts it still needs from you.
 - **Critiques existing copy.** It goes line by line, names the problem ("no proof", "a competitor could say this", "label instead of claim", "salesy CTA"), says which fact would fix it, and ranks the fixes by impact.
+- **Writes SEO pages and templates.** It reads the results page first, writes the answer in the first two sentences, follows a playbook per page type, and applies a "should this page exist" gate and swap test for programmatic pages.
 - **Lints a draft.** `scripts/lint_copy.py` flags the mechanical tells:
   - stock and AI words
   - presumptive intensifiers ("real", "actually", "already")
@@ -54,6 +55,7 @@ The skill triggers on its own when you ask for website copy. For example:
 - "Critique the copy on pricing.html. It sounds generic."
 - "Give me CTA labels for a 30-minute discovery call."
 - "Write a landing page for our RAG consulting service. We sell to CTOs."
+- "Design the LLM prompt that generates our 2,000 integration pages."
 
 Expect questions before you get copy: which client result you can name, what an engagement costs, who takes the first call, and what you turn down. Those answers decide whether the copy sounds human.
 
@@ -67,6 +69,7 @@ skills/plainspoken/
 │   ├── elements.md              hero, subhead, headings, body, proof, process, FAQ, forms, with real examples
 │   ├── proof-and-ctas.md        proof formats, risk reversal, CTA intent ladder, CTA labels
 │   ├── ai-tells.md              catalogue of generic and AI-sounding patterns, with fixes
+│   ├── seo-pages.md             search intent, page-type playbooks, titles and metas, AI citations, programmatic templates
 │   └── sources.md               the research behind the rules
 └── scripts/
     └── lint_copy.py             mechanical tell checker (Python 3, no dependencies)
@@ -74,7 +77,7 @@ skills/plainspoken/
 
 ## Where the rules come from
 
-The method draws on Joanna Wiebe (Copyhackers), April Dunford, Eugene Schwartz, Peep Laja (Wynter), Harry Dry (Marketing Examples), Julian Shapiro, Eddie Shleyner, Ann Handley and David Ogilvy. The data comes from the Unbounce Conversion Benchmark and Nielsen Norman Group reading research. The AI-tell patterns build on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). Examples are taken from a teardown of about 20 services and dev-tool websites. Links are in [`sources.md`](skills/plainspoken/references/sources.md).
+The method draws on Joanna Wiebe (Copyhackers), April Dunford, Eugene Schwartz, Peep Laja (Wynter), Harry Dry (Marketing Examples), Julian Shapiro, Eddie Shleyner, Ann Handley and David Ogilvy. The data comes from the Unbounce Conversion Benchmark and Nielsen Norman Group reading research. The SEO rules come from Google's own documentation and rater guidelines, Lily Ray, Kevin Indig, Mike King, Siege Media, Ahrefs and Semrush, plus teardowns of IBM, AWS, Databricks, Zapier, Wise and leading services firms. The AI-tell patterns build on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). Examples are taken from a teardown of about 20 services and dev-tool websites. Links are in [`sources.md`](skills/plainspoken/references/sources.md).
 
 ## Contributing
 
